@@ -24,7 +24,7 @@
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-block"> 
-          <a class="login" href="#" title="Войти в личный кабинет">Войти</a>
+          <a class="login" href="login.html" title="Войти в личный кабинет">Войти</a>
           <a class="registration" href="#" title="Пройти регистрацию">Регистриция</a>
         </div>
       </div>
@@ -58,6 +58,7 @@
     </header>
     <main>
       <section class="promo">
+        <h2 class="visually-hidden">Услуги</h2>
       	<article class="item materials">
       	  <h3>Материалы</h3>
       	  <a class="info" href="#" title="Материалы на любой вкус">на любой вкус</a>
@@ -71,12 +72,22 @@
       	  <a class="info" href="#" title="Техника для стройки">для стройки</a>
       	</article>
       	<article class="sliders">
-      	  <div class="slide">
+          <div class="arrows">
+            <label class="arrow-left" for="perforators-slide"></label>
+            <label class="arrow-right" for="drills-slide"></label>
+          </div>
+          <input id="perforators-slide" name="toggle" type="radio" checked>
+          <input id="drills-slide" name="toggle" type="radio">
+          <div class="circles">
+            <label for="perforators-slide"></label>
+            <label for="drills-slide"></label>
+          </div>
+      	  <div class="slides perforators-slide">
             <h2>Перфораторы</h2>
             <span>Настоящие мужские игрушки</span>
             <a class="catalogue" href="#" title="Открыть каталог">открыть каталог</a> 
           </div>
-          <!-- <div class="slide">
+          <!-- <div class="slides drills-slide">
             <h2>Дрели</h2>
             <span>Соседям на радость</span>
             <a class="catalogue" href="#" title="Открыть каталог">открыть каталог</a> 

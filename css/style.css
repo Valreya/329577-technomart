@@ -1,19 +1,528 @@
 body {
-	font-size: 14px;
-	font-family: "PT Sans", "Arial", serif;
-	color: black;
-	font-weight: normal;
-	line-height: 18px
-}
+	width: 1200px;
+	margin: 0;
+  	padding: 0;
+  	font-family: "PT Sans", "Cuprum", serif;
+  	background-color: #ffffff;
+ }
 
 h2 {
 	font-size: 30px;
-	font-weight: bold;
 	line-height: 30px;
+	text-transform: uppercase;
+	color: #32425c;
 }
 
 h3 {
+	font-size: 24px;
+	line-height: 30px;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+h4 {
 	font-size: 18px;
-	font-weight: bold;
 	line-height: 20px;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+a {
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+}
+
+li {
+	list-style: none;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+/*Хэдер*/
+
+.main-header {
+	background: #f1f5f7;
+}
+
+.header-top,
+.main-navigation {
+	background: #32425c;
+	color: #ffffff;
+}
+
+.header-top:hover {
+	background: #212a3a;
+}
+
+.header-top:active {
+	background: #161d29;
+	color: #85898f;
+}
+
+.logo {
+	width: 220px;
+	height: 42px;
+	font-size: 24px;
+	line-height: 42px;
+	background-color: #ee3643;
+	text-transform: uppercase;
+  	text-decoration: none;
+  	text-align: center;
+  	border-bottom: 5px solid #b52933;
+}
+
+.logo:hover {
+  	background: #ca2c37;
+  	border-bottom-color: #9a212a;
+}
+
+.logo:active {
+  	background: #ba2732;
+  	border-bottom-color: #8e1e26;
+}
+
+.header-contacts a {
+	color: #ee3643;
+	border: 3px solid #ffffff;
+}
+
+.header-contacts p {
+	color: #32425c;
+}
+
+.intro {
+	color: #ee3643;
+	font-style: italic;
+}
+
+.user-block a {
+	background: #ffffff;
+	color: #000000;
+}
+
+.user-block a:hover {
+	color: #ee3643;
+}
+
+.user-block a:active {
+	color: #c5c5c5;
+}
+
+.user-block .log-in {
+	color: #000000;
+}
+
+.user-block .log-in:hover {
+	color: #000000;
+}
+
+.user-block .log-in:active {
+	color: #aac39b;
+}
+
+.user-menu a {
+	color: #293449;
+}
+
+.user-menu a:hover {
+	color: #ee3643;
+}
+
+.user-menu a:active {
+	color: #c5c5c5;
+}
+
+.ordering {
+	background-color: #63a63e;
+}
+
+.ordering:hover {
+	background-color: #5fbb2d;
+}
+
+.ordering:active {
+	color: #aac39b;
+	background-color: #518534;
+}
+
+.main-navigation {
+	width: 940px;
+}
+
+.main-navigation li:hover {
+	background: #212a3a;
+}
+
+.main-navigation li:active {
+	background: #161d29;
+	color: #85898f;
+}
+
+/*Услуги*/
+
+.item {
+  	width: 300px;
+  	height: 125px;
+  	margin: 0 0 20px 20px;
+}
+
+.item a {
+	background: #e5e5e5;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 12px 24px;
+	border-radius: 5px;
+}
+
+.item a:hover {
+	background: #cccccc;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.item a:active {
+	background: #b2b2b2;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.materials {
+  	background: #F6B22D;
+ }
+
+ .instruments {
+  	background: #4AAFDE;
+}
+
+.technique {
+  	background: #CC79D1;
+}
+
+.discount {
+  	background: #85D179;
+}
+
+.delivery {
+  	background: #F6B22D;
+}
+
+.btn {
+	background: #ee3643; 
+}
+
+.btn:hover {
+  	background: #ca2c37; 
+}
+
+.btn:active {
+  	background: #ba2732; 
+}
+
+/*Товары*/
+
+.top {
+	width: 940px;
+	background: #f7f3ec;
+}
+
+.product-list li {
+	width: 220px;
+	height: 318px;
+	border: 1px solid #e5e5e5;
+}
+
+.old-price {
+	color: #999999;
+	text-decoration: line-through;
+	font-weight: bold;
+}
+
+.new-price {
+	background: #ee3643 url("img/red-button.svg") no-repeat;
+}
+
+.product-list li:hover {
+	box-shadow: 0 0 10px 0 #34495e;
+}
+
+.buy {
+	background: #63a63e;
+	box-shadow: 0 3px 0 0 #367315;
+	border-radius: 2px;
+}
+
+.buy:hover {
+	background: #5fbb2d;
+	box-shadow: 0 3px 0 0 #367315;
+}
+
+.buy:active {
+	background: #518534;
+	box-shadow: none;
+}
+
+.to-bookmarks {
+	border: 3px solid #63a63e;
+	border-radius: 2px;
+	color: #32425c;
+}
+
+.to-bookmarks:hover {
+	border: 3px solid #32425c;
+	color: #4d5b72;
+}
+
+.to-bookmarks:active {
+	border: 3px solid #c1c6ce;
+	color: #c1c6ce;
+}
+
+/*Производители*/
+
+.manufacturers-list li {
+	width: 220px;
+	height: 144px;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+}
+
+.manufacturers-list li:hover {
+	box-shadow: 0 0 10px 0 #34495e;
+}
+
+/*Сервис*/
+
+.service-block {
+	background: #f2f6f8;
+}
+
+.service-block h2 {
+	color: #000000;
+}
+
+.service-block h3 {
+	color: #32425c;
+}
+
+.tab li {
+	background: #32425c;
+	color: #ffffff;
+}
+
+.tab li:hover {
+	background: #293449;
+}
+
+.tab li:active {
+	background: #ffffff;
+	color: #32425c;
+}
+
+/*О Компании*/
+
+.company h2 {
+	color: #000000;
+}
+
+.contacts .btn {
+	border: none;
+	color: #ffffff;
+}
+
+/*Каталог*/
+
+.breadcrumbs li,
+.breadcrumbs a {
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.list-title {
+	width: 940px;
+	background: #f2f6f8;
+}
+
+.filters fieldset {
+	border: none;
+}
+
+.filters-title {
+	background: #f7f3ec;
+	color: #000000;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+legend {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.form-btn {
+	background: #ffffff;
+	border: 1px solid #e5e5e5;
+}
+
+.assortment-nav {
+	background: #f7f3ec;
+}
+
+.assortment-nav h4 {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.assortment-nav a {
+	font-size: 13px;
+	color: #c7c7c7;
+	border-bottom: 1px dashed #ee3643;
+}
+
+.assortment-nav a:hover {
+	color: #000000;
+	border-bottom: 1px solid #ee3643;
+}
+
+.assortment-nav a:active {
+	color: #ee3643;
+	border: none;
+}
+
+.catalog-nav a {
+	min-width: 20px;
+    height: 40px;
+    padding: 5px 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+
+.catalog-nav a:hover {
+	border: 1px solid #bdc6ca;
+}
+
+.catalog-nav a:active {
+	border: 1px solid #ee3744;
+}
+
+.catalog-nav .current {
+	color: #ffffff;
+	background: #ee3744;
+}
+
+.about-drills {
+	background: #f2f6f8;
+}
+
+.about-drills h2 {
+	color: #000000;
+}
+
+/*Футер*/
+
+.footer-logo {
+	width: 220px;
+	height: 63px;
+	font-size: 30px;
+	line-height: 30px;
+	background-color: #ee3643;
+	text-transform: uppercase;
+  	text-decoration: none;
+  	text-align: center;
+  	border-bottom: 5px solid #b52933;
+}
+
+.footer-top {
+	margin: 0;
+	background: #32425c;
+}
+
+.footer-top p {
+	color: #ffffff;
+}
+
+.shop-menu a {
+	color: #f1c77e;
+}
+
+.footer-bottom {
+	margin: 0;
+	background: #293449;
+}
+
+.footer-bottom p,
+.footer-bottom span {
+	color: #ffffff;
+}
+
+.feedback a,
+.developed a {
+	color: #f1c77e;
+}
+
+.feedback a:hover {
+	text-decoration: underline;
+}
+
+
+.developed a:hover {
+	text-decoration: underline;
+}
+
+.feedback a:active {
+	color: #ee3643;
+	text-decoration: none;
+}
+
+
+.developed a:active {
+	color: #ee3643;
+	text-decoration: none;
+}
+
+.footer-social li {
+	width: 41px;
+	height: 41px;
+	background: #212a3a;
+	border-radius: 50%;
+}
+
+.footer-social li:hover {
+	background: #ee3643;
+}
+
+.footer-social li:active {
+	background: #ee3643;
+}
+
+.footer-top a:hover {
+	text-decoration: underline;
+}
+
+.footer-menu a:active {
+	color: #929caa;
+	text-decoration: none;
+}
+
+.shop-menu a:active {
+	color: #998a6e;
+	text-decoration: none;
 }

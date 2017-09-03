@@ -56,7 +56,13 @@ li {
 }
 
 .header-top,
-.main-navigation {
+.header-middle,
+.header-bottom {
+	margin: 0;
+  	padding: 0;
+}
+
+.header-top {
 	background: #32425c;
 	color: #ffffff;
 }
@@ -95,6 +101,8 @@ li {
 .header-contacts a {
 	color: #ee3643;
 	border: 3px solid #ffffff;
+	font-size: 21px;
+	line-height: 23px;
 }
 
 .header-contacts p {
@@ -169,12 +177,51 @@ li {
 	color: #85898f;
 }
 
+.header-top-container,
+.header-middle,
+.header-bottom {
+	display: flex;
+	justify-content: space-around;
+}
+
+.main-navigation li {
+	display: inline-block;
+	text-align: center;
+	width: 115px;
+	margin: 0;
+	padding: 22px 0px;
+	background: #32425c;
+	border-bottom: 5px solid #293449;
+}
+
+.main-navigation {
+	display: block;
+}
+
 /*Услуги*/
 
+.promo {
+	width: 940px;
+}
+
+
 .item {
-  	width: 300px;
-  	height: 125px;
-  	margin: 0 0 20px 20px;
+	width: 300px;
+	min-height: 123px;
+	display: inline-block;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 15px;
+	margin-bottom: 14px;
+	padding-left: 20px;
+}
+
+.item:first-child {
+	margin-left: 130px;
+}
+
+.item h3 {
+	font-weight: bold;
 }
 
 .item a {
@@ -182,6 +229,7 @@ li {
 	background: rgba(0, 0, 0, 0.1);
 	padding: 12px 24px;
 	border-radius: 5px;
+	text-transform: uppercase;
 }
 
 .item a:hover {
@@ -215,7 +263,8 @@ li {
 }
 
 .btn {
-	background: #ee3643; 
+	background: #ee3643;
+	text-transform: uppercase; 
 }
 
 .btn:hover {
@@ -224,6 +273,56 @@ li {
 
 .btn:active {
   	background: #ba2732; 
+}
+
+/*Слайдер*/
+
+.sliders {
+	width: 620px;
+}
+
+.sliders input[type=radio] {
+    display: none;
+}
+
+.sliders h2,
+.sliders span {
+	color: #ffffff;
+	background: #000000;
+}
+
+.sliders-img {
+    overflow: hidden;
+}
+
+.sliders-image {
+    width: 200%;
+    transition: transform 0.8s ease;
+}
+
+.slider-slides img {
+    width: 620px;
+    height: 266px;
+}
+
+.circles {
+	text-align: center;
+}
+
+.circles label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background-color: #ffffff;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#perforators-slide:checked ~ .circles label[for="perforators-slide"],
+#drills-slide:checked ~ .circles label[for="drills-slide"] {
+    background-color: #ef414d;
 }
 
 /*Товары*/
@@ -251,6 +350,14 @@ li {
 
 .product-list li:hover {
 	box-shadow: 0 0 10px 0 #34495e;
+}
+
+.product-action {
+	display: none;
+}
+
+.product:hover .product-action {
+	display: block;
 }
 
 .buy {
@@ -285,22 +392,34 @@ li {
 	color: #c1c6ce;
 }
 
+.index li {
+	display: flex;
+	justify-content: space-around;
+}
+
 /*Производители*/
+
+.manufacturers-list {
+	width: 940px;
+}
 
 .manufacturers-list li {
 	width: 220px;
 	height: 144px;
 	border: 1px solid #e5e5e5;
 	text-align: center;
+	display: inline-block;
 }
 
 .manufacturers-list li:hover {
 	box-shadow: 0 0 10px 0 #34495e;
 }
 
+
 /*Сервис*/
 
 .service-block {
+	width: 940px;
 	background: #f2f6f8;
 }
 
@@ -310,6 +429,10 @@ li {
 
 .service-block h3 {
 	color: #32425c;
+}
+
+.service-controls {
+	display: flex;
 }
 
 .tab li {
@@ -328,7 +451,11 @@ li {
 
 /*О Компании*/
 
-.company h2 {
+.about-company {
+	display: flex;
+}
+
+.company-info h2 {
 	color: #000000;
 }
 
@@ -339,11 +466,29 @@ li {
 
 /*Каталог*/
 
+.breadcrumbs {
+    display: flex;
+}
+
 .breadcrumbs li,
 .breadcrumbs a {
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
+}
+
+.breadcrumbs a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -18px;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    box-shadow: 1px 1px 0 1px #dddddd;
+    border-radius: 50px 0 0 0;
+    transform: rotate(-45deg) scale(0.73);
 }
 
 .list-title {
@@ -375,6 +520,21 @@ legend {
 	border: 1px solid #e5e5e5;
 }
 
+.catalog-columns {
+  	display: flex;
+    justify-content: space-between;
+    width: 940px;
+    flex-wrap: wrap;
+}
+
+.filters {
+	width: 220px;
+}
+
+.assortment {
+	width: 700px;
+}
+
 .assortment-nav {
 	background: #f7f3ec;
 }
@@ -398,6 +558,12 @@ legend {
 .assortment-nav a:active {
 	color: #ee3643;
 	border: none;
+}
+
+.catalog {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .catalog-nav a {
@@ -426,6 +592,12 @@ legend {
 .catalog-nav .current {
 	color: #ffffff;
 	background: #ee3744;
+}
+
+.product {
+	width: 220px;
+  	margin-bottom: 20px;
+  	margin-right: 20px;
 }
 
 .about-drills {
@@ -525,4 +697,26 @@ legend {
 .shop-menu a:active {
 	color: #998a6e;
 	text-decoration: none;
+}
+
+.footer-top,
+.footer-bottom {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-contacts {
+  width: 330px;
+  margin: 0;
+  margin-right: 70px;
+}
+
+.footer-social {
+  width: 145px;
+}
+
+.footer-copyright {
+  width: 150px;
+  margin: 0;
+  margin-left: auto;
 }

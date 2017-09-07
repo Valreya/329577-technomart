@@ -10,16 +10,24 @@
   <body>
     <header class="main-header">
       <div class="header-top">
-        <div class="header-top-wrapper">
-          <div class="header-top-container">
+        <div class="container">
+          <div class="header-top-wrapper">
             <a class="logo" title="Техномарт - интернет-магазин строительных материалов и инструментов для ремонта">Техномарт</a>
             <form class="search" action="#">
               <input id="search-box" type="text" name="search">
               <label for="search-box">Поиск</label>
             </form>
-            <a class="bookmarks" href="#" title="Мои закладки">Закладки: 0</a>
-            <a class="basket" href="#" title="Моя корзина">Корзина: 0</a>
-            <a class="ordering" href="#" title="Оформить заказ">Оформить заказ</a>
+            <ul class="personal-block">
+              <li>
+                <a class="bookmarks" href="#" title="Мои закладки">Закладки: 0</a>
+              </li>
+              <li>
+                <a class="basket" href="#" title="Моя корзина">Корзина: 0</a>
+              </li>
+              <li>
+                <a class="ordering" href="#" title="Оформить заказ">Оформить заказ</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -30,13 +38,14 @@
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-block"> 
-          <a class="login" href="login.html" title="Войти в личный кабинет">Войти</a>
-          <a class="registration" href="#" title="Пройти регистрацию">Регистриция</a>
+          <a class="log-in" href="#" title="Логин">Равшан Джамшутович</a>
+          <a class="log-out" href="#" title="Выход"></a>
         </div>
       </div>
       <div class="header-bottom">
-        <nav class="main-navigation">
-          <ul>
+        <div class="container">
+         <nav class="main-navigation">
+          <ul class="menu">
             <li>
               <a href="#" title="Перейти на главную">Главная</a>
             </li>
@@ -59,11 +68,12 @@
               <a href="#" title="Наши контакты">Контакты</a>
             </li>
           </ul>
-        </nav>
+         </nav>
+        </div>
       </div>
     </header>
     <main>
-      <section class="route">
+      <div class="route">
         <ul class="breadcrumbs">
           <li>
             <a class="home" href="index.html" title="Главная"></a>
@@ -78,10 +88,10 @@
             Перфораторы
           </li>
         </ul>
-      </section>
-      <div class="catalog-columns">
+      </div>
+      <section class="catalog-columns">
         <h2 class="list-title">Перфораторы</h2>
-        <section class="filters">
+        <div class="filters">
           <h4 class="filters-title">Фильтр</h4>
           <form class="filter" method="get" action="#">
             <fieldset class="price-select">
@@ -138,9 +148,9 @@
             </fieldset>
           <button class="form-btn" type="submit">Показать</button>
           </form>
-        </section>
-        <section class="assortment">
-          <section class="assortment-nav">
+        </div>
+        <div class="assortment">
+          <div class="assortment-nav">
             <h4>Сортировка:</h4>
             <ul class="sorting">
               <li>
@@ -155,14 +165,14 @@
             </ul>
             <ul class="sorting-nav">
               <li>
-                <a href="#" title="По возрастанию"></a>
+                <a class="up" href="#" title="По возрастанию"></a>
               </li>
               <li>
-                <a href="#" title="По убыванию"></a>
+                <a class="down" href="#" title="По убыванию"></a>
               </li>
             </ul>
-          </section>
-          <section class="catalog">
+          </div>
+          <div class="catalog">
             <h2 class="visually-hidden">Каталог товаров</h2>
             <ul class="product-list">
               <li class="product">
@@ -271,8 +281,8 @@
                 <a class="new-price" href="#">12500 р.</a>
               </li>
             </ul>
-          </section>
-          <section class="catalog-nav">
+          </div>
+          <div class="catalog-nav">
             <ul class="btn-page">
               <li class="active-btn">
                 <a  class="current" href="#" title="1 страница">1</a>
@@ -287,14 +297,16 @@
                 <a href="#" title="Следующая">Следующая</a>
               </li>
             </ul>
-          </section>
-        </section>
-      </div>
-      <section class="about-drills">
-        <h2>Пара слов о перфораторах</h2>
-        <p>
-          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-        </p>
+          </div>
+        </div>
+      </section>
+      <section class="drills-info">
+        <div class="about-drills">
+          <h2>Пара слов о перфораторах</h2>
+          <p>
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
       </section>
     </main>
     <footer class="main-footer">

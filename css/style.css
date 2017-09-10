@@ -2086,6 +2086,7 @@ footer {
     transform: translate(-50%, -50%);
     z-index: 30;
     background: #ffffff;
+    font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .added-to-cart p {
@@ -2101,16 +2102,19 @@ footer {
     height: 66px;
     background: url("../img/form-1.svg") no-repeat;
     position: absolute;
-    top: 48px;
-    left: 81px;
+    top: -10px;
+    left: -90px;
 }
 
 .added-to-cart button {
     position: absolute;
     top: 9px;
     right: 9px;
+    width: 21px;
+    height: 21px;
     padding: 0;
     border: 0;
+    background-image: url("../img/close.svg");
     background-color: transparent;
 }
 
@@ -2121,6 +2125,7 @@ footer {
 }
 
 .to-order {
+    width: 
     color: #ffffff;
     background: #ee3643;
     padding: 14px 60px;
@@ -2135,6 +2140,22 @@ footer {
     border: none;
     border-radius: 5px;
     margin-left: 20px;
+}
+
+.write-us {
+    position: relative;
+}
+
+.write-us .close {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 21px;
+    height: 21px;
+    padding: 0;
+    border: 0;
+    background-image: url("../img/close.svg");
+    background-color: transparent;
 }
 
 .write-us-form {
@@ -2167,6 +2188,7 @@ footer {
 }
 
 .form-answer-text textarea {
+    margin-left: 40px;
     border-radius: 5px;
     font-size: 13px;
     line-height: 18px;

@@ -1967,10 +1967,13 @@ footer {
     font-size: 30px;
     line-height: 30px;
     margin: 75px 125px 68px 179px;
+    position: relative;
 }
 
 .added-to-cart p::before {
     content: "";
+    width: 66px;
+    height: 66px;
     background: url("img/form-1.svg") no-repeat;
     position: absolute;
     top: 48px;
@@ -1982,6 +1985,8 @@ footer {
     top: 9px;
     right: 9px;
 }
+
+
 
 .modul-btn {
     background: #f1f1f1;

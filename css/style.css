@@ -141,6 +141,7 @@ header {
 	position: absolute;
 	top: 13px;
 	left: 5px;
+    font-family: "Cuprum", sans-serif;
 }
 
 .search input[type=text]:active + label {
@@ -2087,6 +2088,7 @@ footer {
     z-index: 30;
     background: #ffffff;
     font-family: "Cuprum", "Arial", sans-serif;
+    display: none;
 }
 
 .added-to-cart p {
@@ -2143,7 +2145,7 @@ footer {
 }
 
 .write-us {
-    position: relative;
+    font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .write-us .close {
@@ -2167,6 +2169,7 @@ footer {
     padding-top: 55px;
     margin: 0 auto;
     box-shadow: 0 0 10px #cccccc;
+    position: relative;
 }
 
 .write-us-form input {
@@ -2181,14 +2184,19 @@ footer {
 .form-answer {
     display: flex;
     justify-content: space-around;
+    padding: 0px 60px;
 }
 
 .form-answer-text {
     margin-top: 22px;
 }
 
+.form-answer-text label {
+    margin-left: 60px;
+}
+
 .form-answer-text textarea {
-    margin-left: 40px;
+    margin-left: 60px;
     border-radius: 5px;
     font-size: 13px;
     line-height: 18px;

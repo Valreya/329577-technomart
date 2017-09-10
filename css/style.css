@@ -315,6 +315,10 @@ header {
 	color: #ee3643;
 }
 
+.user-block {
+    display: flex;
+    align-items: flex-start;
+}
 
 
 .user-block a:active {
@@ -341,7 +345,7 @@ header {
   	top: 9px;
   	width: 30px;
   	height: 30px;
-  	background: url('../img/login.svg') no-repeat 11% -10%;
+  	background: url('../img/login.svg') no-repeat 0 3px;
   	opacity: 0.5;
 }
 
@@ -390,7 +394,7 @@ header {
   	text-decoration: none;
   	color: #FFFFFF;
   	font-size: 17px;
-  	padding: 19px 33px;
+  	padding: 19px 0px;
 }
 
 /*Услуги*/
@@ -400,9 +404,11 @@ header {
 	flex-wrap: wrap;
 	margin-top: 60px;
 	margin-bottom: 52px;
+    align-items: flex-start;
+    font-family: "Cuprum", sans-serif;
 }
 
-.promo-columm-1 {
+.promo-column-1 {
 	width: 620px;
     display: flex;
     flex-wrap: wrap;
@@ -410,10 +416,14 @@ header {
     margin-right: 20px;
 }
 
+
 .item {
 	width: 277px;
 	margin-bottom: 20px;
 	padding-left: 23px;
+    position: relative;
+    padding-top: 26px;
+    padding-bottom: 40px;
 }
 
 .item .instruments {
@@ -422,62 +432,63 @@ header {
 
 .item h3 {
 	color: #ffffff;
-	margin: 0 0 30px 0;
+	margin: 0 0 20px 0;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 600;
 
 }
 
+.item a {
+    display: inline-block;
+
+}
+
 .materials {
 	background: #F6B22D url("../img/icon-materials.svg") no-repeat 90% 50%;
     position: relative;
-	padding-top: 26px;
-	padding-bottom: 40px;
+    margin-right: 20px;
+	
 }
 
 .materials a {
-	padding: 14px 24px;
+	padding: 14px 0px;
 }
 
 .instruments {
 	background: #4AAFDE url("../img/icon-instruments.svg") no-repeat 90% 50%;
-	padding-top: 26px;
-	padding-bottom: 40px;
+	
 }
 
 .instruments a {
-	padding: 14px 27px;
+	padding: 14px 0px;
 }
 
 .technique {
 	background: #CC79D1 url("../img/icon-technique.svg") no-repeat 90% 50%;
-	padding-top: 26px;
-	padding-bottom: 40px;
+	
 }
 
 .technique a {
-	padding: 12px 30px;
+	padding: 12px 0px;
 }
 
 .discount {
 	background: #85D179 url("../img/icon-discount.svg") no-repeat 90% 51%;
-	padding-top: 26px;
-	padding-bottom: 40px;
+	
 }
 
 .discount a {
-	padding: 14px 23px;
+	padding: 14px 0px;
 }
 
 .delivery {
 	background: #F6B22D url("../img/icon-delivery.svg") no-repeat 90% 52%;
-	padding-top: 26px;
-	padding-bottom: 40px;
+	
 }
 
 .delivery a {
-	padding: 14px 37px;
+	padding: 14px 0px;
 }
 
 .info {
@@ -685,7 +696,6 @@ header {
 }
 
 .product-list li {
-	margin: 0 0 0 20px;
 	padding: 0;
 }
 
@@ -695,7 +705,6 @@ header {
 
 .product {
     position: relative;
-    display: inline-block;
     width: 220px;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -1198,6 +1207,7 @@ credit:focus ~ .tabs label[for="credit"]{
     text-decoration: none;
     text-transform: uppercase;
     margin: 0 20px;
+    position: relative;
 }
 
 .breadcrumbs li:first-child {
@@ -1231,17 +1241,15 @@ credit:focus ~ .tabs label[for="credit"]{
 	color: #000000;
 }
 
-.breadcrumbs a::after {
+.breadcrumbs li::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: -18px;
-    z-index: 1;
-    width: 36px;
-    height: 36px;
-    background-color: white;
+    width: 8px;
+    height: 12px;
     box-shadow: 1px 1px 0 1px #dddddd;
-    border-radius: 50px 0 0 0;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-color: #000000;
     transform: rotate(-45deg) scale(0.73);
 }
 
@@ -1296,13 +1304,13 @@ legend {
     width: 220px;
     position: relative;
     background: #f7f3ec;
-    margin-bottom: 32px;
-    margin-top: 23px;
+    padding-bottom: 32px;
+    padding-top: 23px;
 }
 
 .range-controls .scale {
     height: 2px;
-    background: #f7f3ec;
+    background: #ffffff;
 }
 
 .range-controls .bar {
@@ -1532,15 +1540,13 @@ li .down:active {
 
 .catalog {
   	padding: 0;
-  	margin: 0;
   	margin-bottom: 20px;
 }
 
 .catalog-product-list {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 .btn-page {
@@ -1583,7 +1589,7 @@ li .down:active {
 .product {
 	width: 220px;
   	margin-bottom: 20px;
-  	margin-right: 20px;
+    box-sizing: border-box;
 }
 
 

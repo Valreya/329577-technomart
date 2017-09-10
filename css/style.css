@@ -1958,7 +1958,7 @@ footer {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);
     z-index: 30;
     background: #ffffff;
 }
@@ -1970,7 +1970,8 @@ footer {
 }
 
 .added-to-cart p::before {
-    background: #ffffff url("../img/form-1.svg") no-repeat;
+    content: "";
+    background: url("img/form-1.svg") no-repeat;
     position: absolute;
     top: 48px;
     left: 81px;

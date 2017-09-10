@@ -296,7 +296,6 @@ header {
 }
 
 .user-block {
-	width: 250px;
 	font-size: 21px;
 	font-weight: 400;
 	line-height: 0.857;
@@ -440,6 +439,10 @@ header {
 
 }
 
+.menu ul {
+
+}
+
 .menu li {
 	flex-grow: 1;
 	padding: 19px 0px;
@@ -452,12 +455,14 @@ header {
 
 .menu a:hover {
   	background: #293449;
+    border-bottom: 5px solid #293449;
 }
 
 .menu a:active {
   	background: #1d2739;
   	color: #616874;
   	border: none;
+    border-bottom: 5px solid #293449;
 }
 
 .menu a {
@@ -1293,13 +1298,13 @@ credit:focus ~ .tabs label[for="credit"]{
 .breadcrumbs li::after {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     box-shadow: 1px 1px 0 1px #dddddd;
     border-top: 1px;
     border-bottom: 1px;
     border-color: #000000;
-    transform: rotate(-45deg) scale(0.73);
+    transform: rotate(-45deg);
 }
 
 .breadcrumbs li:last-child::after {
@@ -1328,14 +1333,17 @@ credit:focus ~ .tabs label[for="credit"]{
 
 .filters {
     width: 220px;
+    cursor: pointer;
 }
 
 .filters-title {
     padding: 13px 150px 15px 19px;
+    margin: 0;
 }
 
 .filters fieldset {
 	border: none;
+    padding: 0;
 }
 
 .filters-title {
@@ -1359,8 +1367,8 @@ legend {
     width: 220px;
     position: relative;
     background: #f7f3ec;
-    padding-bottom: 32px;
-    padding-top: 23px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     border-radius: 5px;
 }
 
@@ -1946,10 +1954,11 @@ footer {
 .added-to-cart {
     width: 620px;
     border-top: 7px solid #ee3643;
-    box-shadow: 5px 10px 10px 10px #787f8c;
+    box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
     position: fixed;
-    top: 200px;
-    left: 475px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
     z-index: 30;
     background: #ffffff;
 }

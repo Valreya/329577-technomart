@@ -122,6 +122,7 @@ header {
 	background: #293449 url("../img/search.svg") no-repeat 5% 50%;
 	opacity: 0.5;
 	color: #293449;
+    font-family: "Cuprum", sans-serif;
 }
 
 .search input:hover {
@@ -177,7 +178,7 @@ header {
 .personal-block .basket {
     position: relative;
     top: 11px;
-    padding: 12px 40px;
+    padding: 14px 40px;
 }
 
 .personal-block .bookmarks::before {
@@ -216,7 +217,8 @@ header {
     color: #ffffff;
     background: #ee3643;
     text-decoration: none;
-    padding: 11px 10px;
+    padding: 14px 40px;
+    line-height: 
     margin: 0;
 }
 
@@ -277,7 +279,7 @@ header {
 }
 
 .header-contacts a::before {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 15px;
 	top: 7px;
@@ -317,9 +319,8 @@ header {
 }
 
 .personal-data {
-    display: inline-block;
-    padding: 14px 10px 11px 47px;
-    background: #ffffff;
+    width: 300px;
+    font-size: 0;
 }
 
 .personal-user-block .log-in {
@@ -332,11 +333,18 @@ header {
     color: #b7bfc8;
 }
 
-.log-out {
-    display: inline-block;;
-    margin: 14px 10px 14px 38px;
+.log-in {
+    font-family: "Cuprum", sans-serif;
     background: #ffffff;
+    padding: 14px 14px 14px 50px;
+    position: relative;
+}
+
+.log-out {
+    display: inline-block;
     margin: 0;
+    background: #ffffff;
+    padding: 14px 14px 14px 0px;
 }
 
 .log-out:hover {
@@ -344,22 +352,24 @@ header {
     fill: #32425c;
 }
 
-.user-block .log-in::before {
-    content: '';
+.personal-user-block .log-in::before {
+    content: "";
     position: absolute;
-    left: 110px;
-    top: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("../img/icon-user.svg") no-repeat 40% 46%;
+    left: 20px;
+    top: 17px;
+    width: 20px;
+    height: 18px;
+    background: url("../img/icon-user.svg") no-repeat;
     opacity: 0.5;
 }
+
 
 .user-menu a {
     color: #32425c;
     text-decoration: underline;
     text-align: center;
     padding-left: 18px;
+    position: relative;
 }
 
 .user-menu a:hover {
@@ -431,6 +441,8 @@ header {
 .my-orders::after {
     content: "";
     position: absolute;
+    top: 10px;
+    left: 100px;
     width: 4px;
     height: 4px;
     background: #32425c;
@@ -451,7 +463,6 @@ header {
     font-family: "Cuprum", sans-serif;
 
 }
-
 
 .menu li {
 	flex-grow: 1;
@@ -837,15 +848,27 @@ header {
     z-index: 10;
 }
 
+.product-action .buy {
+    position: relative;
+}
+
 .product-action .buy::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 7px;
-    top: 10px;
-    width: 30px;
-    height: 30px;
+    top: 7px;
+    width: 15px;
+    height: 17px;
     background: url("../img/basket.svg") no-repeat 11% 35%;
     opacity: 0.3;
+}
+
+.product-action .buy:hover::before {
+    opacity: 1;
+}
+
+.product-action .buy:active::before {
+    opacity: 1;
 }
 
 .product .product-action .buy,
@@ -1406,6 +1429,7 @@ header {
     margin-bottom: 15px;
     color: #32425c;
     box-sizing: border-box;
+    font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .filters {
@@ -1425,7 +1449,7 @@ header {
 }
 
 .filters-title {
-	background: #fcfbf8;
+	background: #f7f3ec;
 	color: #000000;
 	font-size: 13px;
 	line-height: 18px;

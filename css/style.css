@@ -80,13 +80,14 @@ header {
 	width: 220px;
 	position: absolute;
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 42px;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
 	color: #ffffff;
 	background: #ee3643;
+    font-family: "Cuprum", sans-serif;
 }
 
 .logo::after {
@@ -109,15 +110,16 @@ header {
 
 .search {
 	position: relative;
-	left: 220px;
+	left: 222px;
 	color: #ffffff;
+    margin-right: 30px;
 }
 
 .search input {
 	height: 32px;
 	width: 230px;
 	border: none;
-	padding: 5px 0 5px 40px;
+	padding: 6px 0 5px 40px;
 	background: #293449 url("../img/search.svg") no-repeat 5% 50%;
 	opacity: 0.5;
 	color: #293449;
@@ -138,8 +140,8 @@ header {
 .search label {
 	margin-left: 40px;
 	position: absolute;
-	top: 11px;
-	left: 0;
+	top: 13px;
+	left: 5px;
 }
 
 .search input[type=text]:active + label {
@@ -156,12 +158,19 @@ header {
 	margin: 0;
 	padding: 0;
     align-items: flex-start;
+    font-family: "Cuprum", sans-serif;
 }
 
 .personal-block a {
 	color: #ffffff;
 	text-decoration: none;
     width: 150px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.bookmarks {
+
 }
 
 .personal-block .bookmarks,
@@ -178,7 +187,7 @@ header {
 	top: 10px;
 	width: 30px;
 	height: 30px;
-	background: url("../img/bookmark.svg") no-repeat 11% 51%;
+	background: url("../img/bookmark.svg") no-repeat 11% 35%;
 	opacity: 0.3;
 }
 
@@ -199,7 +208,7 @@ header {
 	top: 10px;
 	width: 30px;
 	height: 30px;
-	background: url("../img/basket.svg") no-repeat 11% 51%;
+	background: url("../img/basket.svg") no-repeat 11% 35%;
 	opacity: 0.3;
 }
 
@@ -216,7 +225,7 @@ header {
 	background: #63a63e;
 	text-decoration: none;
 	line-height: 39px;
-	padding: 14px 15px;
+	padding: 14px 20px;
 	margin: 0;
 }
 
@@ -232,16 +241,17 @@ header {
 .header-middle {
 	position: relative;
     padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 27px;
 }
 
 .intro {
 	width: 210px;
 	color: #EE4F5B;
-	margin: 0 20px 0 40px;
+	margin: 5px 10px 0 50px;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 1.438;
+    font-family: "Cuprum", sans-serif;
 }
 
 .header-middle-wrapper {
@@ -252,18 +262,18 @@ header {
 .header-contacts {
 	width: 310px;
 	position: relative;
-	margin: 0 0 0 20px;
+	margin: 5px 0 0 50px;
+    font-size: 14px;
+    font-family: "Cuprum", sans-serif;
 }
 
 .header-contacts a {
     font-family: "Cuprum", sans-serif;
-	padding: 12px 52px 11px 74px;
-	margin: 0 0 10px 0;
+	padding: 12px 45px 11px 74px;
 	color: #e9292a;
 	font-size: 21px;
 	display: inline-block;
 	border: 3px solid #ffffff;
-	padding: auto;
 }
 
 .header-contacts a::before {
@@ -280,9 +290,9 @@ header {
 .header-contacts p {
 	color: #32425C;
 	margin: 0;
-	padding-left: 10px;
+	padding-left: 8px;
 	font-size: 14px;
-	line-height: 1.125;
+	line-height: 1;
 }
 
 .user-block {
@@ -290,10 +300,10 @@ header {
 	font-size: 21px;
 	font-weight: 400;
 	line-height: 0.857;
-	padding-left: 100px;
+	padding-left: 50px;
 	position: relative;
 	display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .personal-data {
@@ -325,10 +335,10 @@ header {
 .user-block .log-in::before {
     content: '';
     position: absolute;
-    left: 8px;
-    top: 0px;
-    width: 83px;
-    height: 75px;
+    left: 110px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
     background: url("../img/icon-user.svg") no-repeat 40% 46%;
     opacity: 0.5;
 }
@@ -350,9 +360,12 @@ header {
 
 .user-block .login,
 .user-block .registration {
-	color: #000000;
+	margin-top: 5px;
+    color: #000000;
 	text-decoration: none;
 	background: #ffffff;
+    font-family: "Cuprum", sans-serif;
+    font-size: 21px;
 }
 
 .user-block .login:hover,
@@ -387,8 +400,8 @@ header {
 .login:before {
   	content: '';
   	position: absolute;
-  	left: 110px;
-  	top: 9px;
+  	left: 30px;
+  	top: 14px;
   	width: 30px;
   	height: 30px;
   	background: url('../img/login.svg') no-repeat 0 3px;
@@ -404,6 +417,8 @@ header {
 }
 
 .my-orders::after {
+    content: "";
+    position: absolute;
     width: 4px;
     height: 4px;
     background: #32425c;
@@ -413,7 +428,7 @@ header {
 }
 
 .header-bottom-wrapper {
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 }
 
 .menu {
@@ -421,6 +436,7 @@ header {
   	padding: 0;
   	font-size: 0;
   	text-align: center;
+    font-family: "Cuprum", sans-serif;
 
 }
 
@@ -471,14 +487,20 @@ header {
     margin-right: 20px;
 }
 
+.promo-column-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 
 .item {
 	width: 277px;
 	margin-bottom: 20px;
 	padding-left: 23px;
     position: relative;
-    padding-top: 26px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 17px;
 }
 
 .item .instruments {
@@ -496,54 +518,35 @@ header {
 
 .item a {
     display: inline-block;
+    padding: 10px 0px;
 
 }
 
 .materials {
-	background: #F6B22D url("../img/icon-materials.svg") no-repeat 90% 50%;
+	background: #F6B22D url("../img/icon-materials.svg") no-repeat 85% 50%;
     position: relative;
     margin-right: 20px;
 	
 }
 
-.materials a {
-	padding: 14px 0px;
-}
-
 .instruments {
-	background: #4AAFDE url("../img/icon-instruments.svg") no-repeat 90% 50%;
+	background: #4AAFDE url("../img/icon-instruments.svg") no-repeat 85% 50%;
 	
-}
-
-.instruments a {
-	padding: 14px 0px;
 }
 
 .technique {
-	background: #CC79D1 url("../img/icon-technique.svg") no-repeat 90% 50%;
+	background: #CC79D1 url("../img/icon-technique.svg") no-repeat 85% 50%;
 	
-}
-
-.technique a {
-	padding: 12px 0px;
 }
 
 .discount {
-	background: #85D179 url("../img/icon-discount.svg") no-repeat 90% 51%;
+	background: #85D179 url("../img/icon-discount.svg") no-repeat 85% 51%;
 	
-}
-
-.discount a {
-	padding: 14px 0px;
 }
 
 .delivery {
-	background: #F6B22D url("../img/icon-delivery.svg") no-repeat 90% 52%;
+	background: #F6B22D url("../img/icon-delivery.svg") no-repeat 85% 52%;
 	
-}
-
-.delivery a {
-	padding: 14px 0px;
 }
 
 .info {
@@ -586,12 +589,14 @@ header {
     width: 620px;
     margin-right: 19px;
 }
+
 .slider {
     height: inherit;
     overflow: hidden;
     position: relative;
     width: inherit;
 }
+
 .slides {
     height: 266px;
     opacity: 0;
@@ -599,15 +604,19 @@ header {
     width: inherit;
     z-index: 0;
 }
+
 .perforators-slide {
     background-image: url("../img/perforators.jpg");
 }
+
 .drills-slide {
     background-image: url("../img/drills.jpg");
 }
+
 .sliders > input {
     display: none;
 }
+
 .circles label {
     display: inline-block;
     width: 9px;
@@ -619,6 +628,7 @@ header {
     border-radius: 50%;
     cursor: pointer;
 }
+
 .circles {
     position: absolute;
     bottom: 23px;
@@ -929,9 +939,7 @@ header {
     z-index: 20;
 }
 
-.new h4 {
-	margin-bottom: 41px;
-}
+
 
 /*Производители*/
 
@@ -1409,7 +1417,7 @@ legend {
     margin-top: 9px;
 }
 
-.min-price::after {
+.controls-dash {
     content: '';
     width: 25px;
     height: 2px;

@@ -306,6 +306,7 @@ header {
 }
 
 .personal-user-block {
+    width: 300px;
     font-size: 21px;
     font-weight: 400;
     line-height: 0.857;
@@ -332,6 +333,7 @@ header {
 }
 
 .log-out {
+    display: inline-block;;
     margin: 14px 10px 14px 38px;
     background: #ffffff;
     margin: 0;
@@ -1361,17 +1363,17 @@ header {
 .breadcrumbs li::after {
     content: "";
     position: absolute;
+    top: 4px;
+    right: -20px;
     width: 8px;
     height: 8px;
-    box-shadow: 1px 1px 0 1px #dddddd;
-    border-top: 1px;
-    border-bottom: 1px;
-    border-color: #000000;
-    transform: rotate(-45deg);
+    border-top: 1px solid #cdd1d8;
+    border-right: 1px solid #cdd1d8;
+    transform: rotate(45deg);
 }
 
 .breadcrumbs li:last-child::after {
-    box-shadow: none;
+    border: none;
 }
 
 .assortment-nav,
@@ -1619,6 +1621,8 @@ input[type="radio"]:checked + label:before {
     text-transform: uppercase;
     font-weight: 500;
     margin-right: 110px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .assortment-nav a {

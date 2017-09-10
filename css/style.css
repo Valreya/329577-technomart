@@ -81,7 +81,7 @@ header {
 	position: absolute;
 	font-size: 24px;
 	font-weight: 500;
-	line-height: 42px;
+	line-height: 43px;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
@@ -216,7 +216,7 @@ header {
     color: #ffffff;
     background: #ee3643;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 11px 10px;
     margin: 0;
 }
 
@@ -241,7 +241,7 @@ header {
 .header-middle {
 	position: relative;
     padding-top: 40px;
-	padding-bottom: 27px;
+	padding-bottom: 13px;
 }
 
 .intro {
@@ -269,7 +269,7 @@ header {
 
 .header-contacts a {
     font-family: "Cuprum", sans-serif;
-	padding: 12px 45px 11px 74px;
+	padding: 12px 55px 11px 77px;
 	color: #e9292a;
 	font-size: 21px;
 	display: inline-block;
@@ -279,7 +279,7 @@ header {
 .header-contacts a::before {
 	content: '';
 	position: absolute;
-	left: 8px;
+	left: 15px;
 	top: 7px;
 	width: 30px;
 	height: 30px;
@@ -289,8 +289,8 @@ header {
 
 .header-contacts p {
 	color: #32425C;
-	margin: 0;
-	padding-left: 8px;
+	margin-top: 8px;
+	padding-left: 10px;
 	font-size: 14px;
 	line-height: 1;
 }
@@ -303,6 +303,16 @@ header {
 	position: relative;
 	display: flex;
     justify-content: flex-start;
+}
+
+.personal-user-block {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 0.857;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 50px;
 }
 
 .personal-data {
@@ -399,7 +409,7 @@ header {
 .login:before {
   	content: '';
   	position: absolute;
-  	left: 30px;
+  	left: 70px;
   	top: 14px;
   	width: 30px;
   	height: 30px;
@@ -439,9 +449,6 @@ header {
 
 }
 
-.menu ul {
-
-}
 
 .menu li {
 	flex-grow: 1;
@@ -451,6 +458,7 @@ header {
 .menu a {
 	background: #32425c;
 	border-bottom: 5px solid #293449;
+    padding-left: 20px;
 }
 
 .menu a:hover {
@@ -479,7 +487,7 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 60px;
-	margin-bottom: 52px;
+	margin-bottom: 35px;
     align-items: flex-start;
     font-family: "Cuprum", sans-serif;
 }
@@ -505,7 +513,7 @@ header {
 	padding-left: 23px;
     position: relative;
     padding-top: 20px;
-    padding-bottom: 17px;
+    padding-bottom: 20px;
 }
 
 .item .instruments {
@@ -514,7 +522,7 @@ header {
 
 .item h3 {
 	color: #ffffff;
-	margin: 0 0 20px 0;
+	margin: 0 0 15px 0;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 600;
@@ -524,6 +532,7 @@ header {
 .item a {
     display: inline-block;
     padding: 10px 0px;
+    margin: 0;
 
 }
 
@@ -624,8 +633,8 @@ header {
 
 .circles label {
     display: inline-block;
-    width: 9px;
-    height: 9px;
+    width: 6px;
+    height: 6px;
     margin: 0 3px;
     background-color: white;
     vertical-align: top;
@@ -636,7 +645,7 @@ header {
 
 .circles {
     position: absolute;
-    bottom: 23px;
+    bottom: 25px;
     left: 50%;
     width: 200px;
     margin-left: -100px;
@@ -651,11 +660,12 @@ header {
 
 .slide-text h2 {
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
     line-height: 40px;
     text-transform: uppercase;
-    margin: 26px 0 0 0;
+    margin: 23px 0 0 0;
+    font-family: "Cuprum", sans-serif;
 }
 
 .slide-text span {
@@ -664,13 +674,12 @@ header {
     font-size: 18px;
     line-height: 24px;
     font-weight: 100;
-    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
 }
 
-.slide-text .btn {
+.slide-text .btn-catalogue {
     display: block;
     margin: 119px 1px 1px 0px;
-    padding: 13px 40px 10px 40px;
+    padding: 12px 0px;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -692,6 +701,7 @@ header {
     cursor: pointer;
     z-index: 2;
 }
+
 .arrow-left {
     position: absolute;
     top: 100px;
@@ -736,12 +746,13 @@ header {
 
 .top h2 {
 	padding-left: 30px;
+    font-family: "Cuprum", sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
 	font-weight: 500;
-	margin-top: 33px;
-	margin-bottom: 35px;
+	margin-top: 32px;
+	margin-bottom: 20px;
 	color: #32425c;
 }
 
@@ -751,12 +762,13 @@ header {
 	margin-right: 20px;
 	margin-top: 25px;
 	margin-bottom: 26px;
-	border-radius: 5px;
+	border-radius: 3px;
 	background: #ee3643;
-	padding: 14px 55px;
+	padding: 11px 55px;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #ffffff;
+    font-family: "Cuprum", sans-serif;
 }
 
 .product-list {
@@ -903,7 +915,7 @@ header {
 
 .product .old-price {
     min-height: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 10px;
     color: #999;
     text-decoration: line-through;
@@ -929,8 +941,17 @@ header {
     right: -20px;
     width: 0;
     height: 0;
-    border: 20px solid white;
+    border: 19px solid white;
     border-left-color: #ee3643;
+}
+
+.triangle-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 19px 0 19px 32.9px;
+    border-color: transparent transparent transparent #ee3643;
 }
 
 .flag-new::after {
@@ -949,12 +970,10 @@ header {
 /*Производители*/
 
 .popular-manufacturers .btn {
-	padding: 13px 70px;
+	padding: 10px 70px;
 }
 
 .manufacturers-list {
-	width: 940px;
-	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -1001,15 +1020,16 @@ header {
     width: 100%;
     max-height: 525px;
     background-color: #f2f6f8;
-    margin-bottom: 65px;
-    padding-bottom: 102px
+    margin-top: 70px;
+    margin-bottom: 80px;
+    padding-bottom: 25px
 }
 
 
 .service-info h2 {
     margin: 0;
-    padding-top: 67px;
-    padding-bottom: 15px;
+    padding-top: 65px;
+    padding-bottom: 10px;
     text-transform: uppercase;
     font-size: 30px;
     color: black;
@@ -1032,6 +1052,7 @@ header {
     margin-left: 80px;
     width: 280px;
 }
+
 .tabs li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1045,11 +1066,11 @@ header {
 
 .tabs li::after {
     content: "";
-    height: 280px;
+    height: 120px;
     width: 10px;
     position: absolute;
-    top: -79px;
-    left: 270px;
+    top: -59px;
+    left: 230px;
     background-image: url('../img/shadow.png');
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1077,8 +1098,8 @@ header {
 }
 
 .tabs label {
-    padding: 20px 20px;
-    width: 240px;
+    padding: 15px 20px;
+    width: 200px;
     background-color: #3d546e;
     font-family: "Cuprum","Arial",sans-serif;
     color: #ffffff;
@@ -1087,6 +1108,7 @@ header {
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;
+    font-family: "Cuprum","Arial",sans-serif;
 }
 
 .service .btn {
@@ -1121,18 +1143,18 @@ credit:focus ~ .tabs label[for="credit"]{
     }
 
 .service {
-  display: none;
+    display: none;
 }
 
 .service p {
     padding-top: 0;
-    width: 280px;
+    width: 300px;
 }
 
 
 .shipping-tab {
     background-image: url("../img/delivery-img.png");
-    background-position: 120px 21px;
+    background-position: 150px 21px;
     background-repeat: no-repeat;
     min-height: 260px;
     width: 651px;
@@ -1154,6 +1176,16 @@ credit:focus ~ .tabs label[for="credit"]{
     width: 651px;
 }
 
+.credit-btn {
+    background: #ee3643;
+    padding: 11px 20px 11px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Cuprum", sans-serif; 
+    border-radius: 3px;
+}
+
 #shipping:checked ~ .shipping-tab, #shipping:focus ~ .shipping-tab,
 #guarantee:checked ~ .guarantee-tab, #shipping:focus ~ .guarantee-tab,
 #credit:checked ~ .credit-tab, #shipping:focus ~ .credit-tab {
@@ -1173,15 +1205,15 @@ credit:focus ~ .tabs label[for="credit"]{
 /*О Компании*/
 
 .about-company {
-	font-family: "PT Sans", "Cuprum", serif;
+	font-family: "PT Sans", serif;
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 85px;
+	padding-bottom: 110px;
 }
 
 .about-company h2 {
-    margin: 0 0 35px 0;
-    font-family: 'Cuprum';
+    margin: 0 0 30px 0;
+    font-family: "PT Sans", serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 0.8;
@@ -1194,7 +1226,7 @@ credit:focus ~ .tabs label[for="credit"]{
 .delivery-list {
     list-style: none;
     position: relative;
-    margin: 25px 0;
+    margin: 15px 0;
 }
 
 .delivery-list li {
@@ -1206,7 +1238,7 @@ credit:focus ~ .tabs label[for="credit"]{
 }
 
 .delivery-list li:nth-child(3) {
-	padding-top: 25px;
+	padding-top: 20px;
 }
 
 .delivery-list li:before {
@@ -1220,11 +1252,15 @@ credit:focus ~ .tabs label[for="credit"]{
 }
 
 .delivery-list li:nth-child(2):before {
-  	top: 53px;
+  	top: 50px;
 }
 
 .delivery-list li:nth-child(3):before {
-    top: 96px;
+    top: 90px;
+}
+
+.delivery-list ul {
+    padding-bottom: 30px;
 }
 
 .delivery-list a {
@@ -1232,20 +1268,39 @@ credit:focus ~ .tabs label[for="credit"]{
     font-size: 18px;
     line-height: 2;
     text-decoration: none;
-    font-family: 'Cuprum';
+    font-family: "Cuprum", "Arial", sans-serif;
 }
 
-.about-company .btn {
+.company-info a {
+    background: #ee3643;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.about-company button {
     margin: 10px 0 0;
     background: #ee3643;
     color: #ffffff;
-    padding: 14px 40px;
+    font-size: 14px;
+    padding: 10px 50px;
     text-decoration: none;
     border-radius: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    text-transform: uppercase;
 } 
 
 .delivery-list {
-	margin-bottom: 37px;
+	margin-bottom: 20px;
+}
+
+.contacts {
+    margin-right: 30px;
 }
 
 .contacts p {
@@ -1253,7 +1308,7 @@ credit:focus ~ .tabs label[for="credit"]{
 }
 
 .contacts .btn {
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 /*Каталог*/
@@ -1713,7 +1768,7 @@ footer {
   	padding-bottom: 50px;
   	display: flex;
   	padding: 0;
-  	margin: 0;
+  	margin-bottom: 30px;
 }
 
 .footer-contacts {
@@ -1725,9 +1780,9 @@ footer {
 .footer-logo {
   	width: 220px;
 	position: absolute;
-	font-size: 24px;
+	font-size: 30px;
 	font-weight: 700;
-	line-height: 42px;
+	line-height: 62px;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
@@ -1739,7 +1794,7 @@ footer {
   	position: absolute;
     content: '';
     left: 0;
-    top: 42px;
+    top: 61px;
     width: 220px;
     height: 4px;
     background: #b52933;
@@ -1760,7 +1815,6 @@ footer {
 .footer-top-menu {
   	display: flex;
   	padding: 0;
-  	font-size: 0;
   	text-align: center;
 }
 
@@ -1773,7 +1827,10 @@ footer {
 .footer-top-menu a {
   	text-decoration: none;
   	color: #f1f5f7;
-  	padding: 10px;
+  	margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Cuprum", "Arial", sans-serif;
 }
 
 
@@ -1788,11 +1845,12 @@ footer {
 
 .footer-middle {
   	background: #32425C;
-  	font-family: 'Cuprum';
+  	font-family: "Cuprum", "Arial", sans-serif;
   	font-size: 18px;
   	line-height: 1.333;
-  	padding-bottom: 50px;
+  	padding-bottom: 30px;
 }
+
 .shop-info {	
     display: flex;
     justify-content: space-between;
@@ -1801,11 +1859,17 @@ footer {
 
 
 
-.contact p {
+.contact p,
+.contact a {
 	color: #ffffff;
 	padding-bottom: 0;
 	margin-bottom: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Cuprum", "Arial", sans-serif;
 }
+
+
 
 .shop-menu {
   	display: flex;
@@ -1823,7 +1887,10 @@ footer {
 .shop-menu a {
   	color: #FFD180;
   	text-decoration: none;
-  	padding: 10px;
+  	padding-top: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .shop-menu a:hover {
@@ -1845,6 +1912,7 @@ footer {
 
 .footer-bottom .container {
 	display: flex;
+    justify-content: space-around;
 	padding-top: 35px;
 	padding-bottom: 31px;
 }
@@ -1974,7 +2042,7 @@ footer {
     content: "";
     width: 66px;
     height: 66px;
-    background: url("img/form-1.svg") no-repeat;
+    background: url("../img/form-1.svg") no-repeat;
     position: absolute;
     top: 48px;
     left: 81px;
@@ -1984,6 +2052,9 @@ footer {
     position: absolute;
     top: 9px;
     right: 9px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
 }
 
 

@@ -1,6 +1,6 @@
 body {
 	padding: 0;
-  	font-family: "PT Sans", "Cuprum", serif;
+  	font-family: "PT Sans", "Arial", serif;
   	background-color: #ffffff;
  }
 
@@ -61,7 +61,7 @@ header {
 }
 
 .container {
-	width: 960px;
+	width: 940px;
 	margin: 0 auto;
   	padding: 0px 10px;
 }
@@ -256,6 +256,7 @@ header {
 }
 
 .header-contacts a {
+    font-family: "Cuprum", sans-serif;
 	padding: 12px 52px 11px 74px;
 	margin: 0 0 10px 0;
 	color: #e9292a;
@@ -402,8 +403,11 @@ header {
 }
 
 .promo-columm-1 {
-	flex-basis: 740px;
-	flex-grow: 1;
+	width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-right: 20px;
 }
 
 .item {
@@ -1694,8 +1698,14 @@ footer {
   	font-size: 18px;
   	line-height: 1.333;
   	padding-bottom: 50px;
-  	display: flex;
 }
+.shop-info {	
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
 
 .contact p {
 	color: #ffffff;
@@ -1707,8 +1717,6 @@ footer {
   	display: flex;
   	align-items: center;
   	position: relative;
-  	margin: 0;
-  	padding: 0 0 0 400px;
   	margin: 0;
 }
 
@@ -1895,11 +1903,11 @@ footer {
     box-shadow: 5px 10px 10px 10px #787f8c;
     padding-top: 55px;
     margin: 0 auto;
-    padding: 20px;
     box-shadow: 0 0 10px #cccccc;
 }
 
 .write-us-form input {
+  position: relative;
   border-radius: 5px;
   font-size: 13px;
   line-height: 18px;

@@ -29,15 +29,14 @@ header {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
 .logo {
 	width: 220px;
-	position: absolute;
+	position: relative;
 	font-size: 24px;
 	font-weight: 500;
-	line-height: 43px;
+	line-height: 40px;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
@@ -50,8 +49,8 @@ header {
     position: absolute;
     content: "";
     left: 0;
-    top: 42px;
-    width: 220px;
+    top: 43px;
+    right: 0;
     height: 4px;
     background: #b52933;
 }
@@ -66,9 +65,7 @@ header {
 
 .search {
 	position: relative;
-	left: 222px;
 	color: #ffffff;
-    margin-right: 30px;
 }
 
 .search input {
@@ -144,14 +141,20 @@ header {
 
 .personal-block .bookmarks {
 	position: relative;
-	top: 11px;
-	padding: 12px 30px;
+	padding: 12px 0px;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .personal-block .basket {
     position: relative;
-    top: 11px;
-    padding: 14px 40px;
+    width: 150px;
+    padding: 12px 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .personal-block .bookmarks::before {
@@ -190,7 +193,7 @@ header {
     color: #ffffff;
     background: #ee3643;
     text-decoration: none;
-    padding: 14px 40px;
+    padding: 14px 0px;
     margin: 0;
 }
 
@@ -198,9 +201,13 @@ header {
 	color: #ffffff;
 	background: #63a63e;
 	text-decoration: none;
-	line-height: 39px;
-	padding: 14px 20px;
+	line-height: 20px;
+	padding: 12px 0px;
 	margin: 0;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .ordering:hover {
@@ -408,8 +415,8 @@ header {
 .login:before {
   	content: "";
   	position: absolute;
-  	left: 70px;
-  	top: 14px;
+  	left: 65px;
+  	top: 10px;
   	width: 30px;
   	height: 30px;
   	background: url("../img/login.svg") no-repeat 0 3px;
@@ -450,10 +457,12 @@ header {
     justify-content: center;
 }
 
-.menu ul {
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+.menu li:first-child a {
+    padding-left: 20px;
+}
+
+.menu li:last-child a {
+    padding-right: 20px;
 }
 
 .menu li {
@@ -1921,13 +1930,13 @@ footer {
  }
 
 .footer-menu {
-  	padding-left: 370px;
+  	padding-left: 332px;
 }
 
 .footer-top-menu {
   	display: flex;
   	padding: 0;
-  	text-align: center;
+  	text-align: right;
     margin-top: 20px;
     padding-left: 0;
     margin-bottom: 0;
@@ -1981,13 +1990,17 @@ footer {
     font-family: "Cuprum", "Arial", sans-serif;
 }
 
+.contact p {
+    padding-top: 8px;
+}
+
 .contact a {
     text-decoration: none;
 }
 
 .shop-menu {
   	display: flex;
-  	align-items: center;
+  	align-items: right;
   	position: relative;
   	margin: 0;
     padding-left: 0;

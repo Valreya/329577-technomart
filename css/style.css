@@ -281,7 +281,7 @@ header {
 .user-block {
 	font-size: 21px;
 	font-weight: 400;
-	line-height: 0.857;
+	font-size: 21px;
 	padding-left: 50px;
 	position: relative;
 	display: flex;
@@ -298,7 +298,7 @@ header {
     font-size: 21px;
     font-weight: 400;
     line-height: 21px;
-    padding-left: 50px;
+    padding-left: 30px;
     margin-top: 5px;
     position: relative;
 }
@@ -369,6 +369,8 @@ header {
 
 .user-menu {
     margin-top: 6px;
+    width: 300px;
+    justify-content: flex-end;
 }
 
 .user-menu a {
@@ -415,6 +417,7 @@ header {
 }
 
 .login {
+    position: relative;
   	margin-right: 10px;
   	padding: 13px 26px 13px 46px;
 }
@@ -430,8 +433,8 @@ header {
 .login:before {
   	content: "";
   	position: absolute;
-  	left: 65px;
-  	top: 10px;
+  	left: 15px;
+  	top: 13px;
   	width: 30px;
   	height: 30px;
   	background: url("../img/login.svg") no-repeat 0 3px;
@@ -465,7 +468,7 @@ header {
 }
 
 .header-bottom-wrapper {
-	padding-bottom: 40px;
+	padding-bottom: 59px;
 }
 
 .menu {
@@ -475,7 +478,7 @@ header {
   	text-align: center;
     font-family: "Cuprum", "Arial", sans-serif;
     justify-content: center;
-    margin-top: 6px; 
+    margin-top: 25px; 
 }
 
 .menu li:first-child a {
@@ -488,8 +491,7 @@ header {
 
 .menu li {
 	flex-grow: 1;
-	padding: 18px 0px;
-    list-style: none;
+	list-style: none;
 }
 
 .menu a {
@@ -1270,7 +1272,7 @@ header {
 	font-family: "PT Sans", "Arial", serif;
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 85px;
+	padding-bottom: 87px;
 }
 
 .about-company h2 {
@@ -1302,7 +1304,7 @@ header {
 .delivery-list li {
 	padding-left: 35px;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 21px;
 }
 
 .delivery-list li:before {
@@ -1320,16 +1322,16 @@ header {
 }
 
 .delivery-list li:nth-child(3):before {
-    top: 86px;
+    top: 87px;
 }
 
 .company-info .btn {
     background: #ee3643;
     color: #ffffff;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 10px 40px;
     font-family: "Cuprum", "Arial", sans-serif;
-    font-size: 14ps;
+    font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
@@ -1350,7 +1352,7 @@ header {
     font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
     display: inline-block;
-    margin-top: 42px;
+    margin-top: 38px;
     vertical-align: middle;
 } 
 
@@ -1367,16 +1369,12 @@ header {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 35px;
     text-transform: uppercase;
 }
 
 .contacts p {
-	margin-bottom: 36px;
-}
-
-.contacts .btn {
-	margin-top: 30px;
+	margin-bottom: 35px;
 }
 
 /*Каталог*/
@@ -1499,7 +1497,7 @@ legend {
     width: 220px;
     position: relative;
     background: #f7f3ec;
-    padding-bottom: 40px;
+    padding-bottom: 38px;
     padding-top: 40px;
     border-radius: 5px;
 }
@@ -1523,7 +1521,8 @@ legend {
     background: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
 
@@ -1540,11 +1539,11 @@ legend {
 }
 
 .price-controls label {
-    display: inline-block;
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
     cursor: pointer;
+    font-family: "PT Sans", "Arial", serif;
 }
 
 .price-controls input {
@@ -1555,13 +1554,13 @@ legend {
     text-align: center;
     padding: 12px 0px;
     margin-top: 8px;
+    font-family: "PT Sans", "Arial", serif;
 }
 
 .price-controls span{
     display: inline-block;
     vertical-align: middle;
-    margin: 0px 4px;
-    margin-top: 17px;
+    margin: 3px 2px 0px 2px;
 }
 
 .price-controls {
@@ -1580,7 +1579,7 @@ legend {
 
 .manufacturers-select legend,
 .type-of-energy legend {
-    padding-top: 23px;
+    padding-top: 25px;
 }
 
 .manufacturers-select ul,
@@ -1590,10 +1589,15 @@ legend {
     margin-bottom: 0;
 }
 
-.manufacturers-select li,
+.manufacturers-select li {
+    margin-bottom: 4px;
+    list-style: none;
+}
+
+
 .type-of-energy li {
     list-style: none;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 input[type="checkbox"] {
@@ -1606,7 +1610,7 @@ input[type="checkbox"] + label {
     font-weight: normal;
     text-transform: uppercase;
     position: relative;
-    padding-left: 40px;
+    padding-left: 42px;
     display: inline-block;
     padding-bottom: 15px;
     vertical-align: middle;
@@ -2021,7 +2025,7 @@ footer {
 
 .shop-menu {
   	display: flex;
-  	align-items: right;
+  	align-items: center;
   	position: relative;
   	margin-top: 5px;
     padding-left: 0;

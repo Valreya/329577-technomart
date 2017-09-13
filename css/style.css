@@ -4,18 +4,11 @@ body {
   	background-color: #ffffff;
  }
 
-ul {
-	padding-left: 0;
-	margin-top: 0;
-	margin-bottom: 0; 
-}
-
 .visually-hidden {
 	display: none;
 }
 
 /*Хэдер*/
-
 
 header {
 	background: #f1f5f7;
@@ -24,7 +17,6 @@ header {
 .container {
 	width: 940px;
 	margin: 0 auto;
-  	padding: 0px 10px;
 }
 
 .header-top {
@@ -52,7 +44,7 @@ header {
 
 .logo::after {
     position: absolute;
-    content: '';
+    content: "";
     left: 0;
     top: 42px;
     width: 220px;
@@ -122,6 +114,12 @@ header {
     font-family: "Cuprum", "Arial", sans-serif;
 }
 
+.personal-block ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .personal-block li {
     list-style: none;
 }
@@ -133,7 +131,6 @@ header {
     font-size: 17px;
     font-weight: 400;
 }
-
 
 .personal-block .bookmarks {
 	position: relative;
@@ -148,7 +145,7 @@ header {
 }
 
 .personal-block .bookmarks::before {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 7px;
 	top: 10px;
@@ -169,7 +166,7 @@ header {
 }
 
 .personal-block .basket::before {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 7px;
 	top: 10px;
@@ -208,13 +205,13 @@ header {
 .header-middle {
 	position: relative;
     padding-top: 40px;
-	padding-bottom: 13px;
+	padding-bottom: 10px;
 }
 
 .intro {
 	width: 210px;
 	color: #EE4F5B;
-	margin: 5px 10px 0 50px;
+	margin: 6px 10px 0 50px;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 1.438;
@@ -229,18 +226,20 @@ header {
 .header-contacts {
 	width: 310px;
 	position: relative;
-	margin: 5px 0 0 50px;
+	margin: 5px 0 0 60px;
     font-size: 14px;
     font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .header-contacts a {
     font-family: "Cuprum", "Arial", sans-serif;
-	padding: 12px 55px 11px 77px;
+	padding: 9px 50px 9px 70px;
 	color: #e9292a;
 	font-size: 21px;
 	display: inline-block;
 	border: 3px solid #ffffff;
+    vertical-align: middle;
+    text-decoration: none;
 }
 
 .header-contacts a::before {
@@ -257,7 +256,7 @@ header {
 .header-contacts p {
 	color: #32425C;
 	margin-top: 8px;
-	padding-left: 10px;
+	padding-left: 20px;
 	font-size: 14px;
 	line-height: 1;
 }
@@ -307,6 +306,9 @@ header {
     background: #ffffff;
     padding: 14px 14px 14px 50px;
     position: relative;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 21px;
 }
 
 .log-out {
@@ -314,6 +316,8 @@ header {
     margin: 0;
     background: #ffffff;
     padding: 14px 14px 14px 0px;
+    vertical-align: baseline;
+    line-height: 15px;
 }
 
 .log-out:hover {
@@ -332,13 +336,16 @@ header {
     opacity: 0.5;
 }
 
-
 .user-menu a {
     color: #32425c;
     text-decoration: underline;
     text-align: center;
     padding-left: 18px;
     position: relative;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
 }
 
 .user-menu a:hover {
@@ -369,7 +376,6 @@ header {
     align-items: flex-start;
 }
 
-
 .user-block .login:active,
 .user-block .registration:active {
 	color: #c5c5c5;
@@ -377,7 +383,7 @@ header {
 
 .login {
   	margin-right: 10px;
-  	padding: 12px 26px 12px 46px;
+  	padding: 13px 26px 13px 46px;
 }
 
 .login:hover {
@@ -404,7 +410,7 @@ header {
 }
 
 .registration {
-	padding: 12px 25px;
+	padding: 13px 25px;
 }
 
 .my-orders::after {
@@ -430,14 +436,19 @@ header {
   	font-size: 0;
   	text-align: center;
     font-family: "Cuprum", "Arial", sans-serif;
+    justify-content: center;
+}
 
+.menu ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .menu li {
 	flex-grow: 1;
-	padding: 19px 0px;
+	padding: 17px 0px;
     list-style: none;
-
 }
 
 .menu a {
@@ -510,41 +521,35 @@ header {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 600;
-
 }
 
 .item a {
     display: inline-block;
     padding: 10px 0px;
     margin: 0;
-
+    vertical-align: text-top;
 }
 
 .materials {
 	background: #F6B22D url("../img/icon-materials.svg") no-repeat 85% 50%;
     position: relative;
     margin-right: 20px;
-	
 }
 
 .instruments {
-	background: #4AAFDE url("../img/icon-instruments.svg") no-repeat 85% 50%;
-	
+	background: #4AAFDE url("../img/icon-instruments.svg") no-repeat 90% 52%;
 }
 
 .technique {
 	background: #CC79D1 url("../img/icon-technique.svg") no-repeat 85% 50%;
-	
 }
 
 .discount {
-	background: #85D179 url("../img/icon-discount.svg") no-repeat 85% 51%;
-	
+	background: #85D179 url("../img/icon-discount.svg") no-repeat 80% 52%;
 }
 
 .delivery {
 	background: #F6B22D url("../img/icon-delivery.svg") no-repeat 85% 52%;
-	
 }
 
 .info {
@@ -674,7 +679,7 @@ header {
     border-radius: 3px;
 }
 
-.arrow-right{
+.arrow-right {
     position: absolute;
     top: 97px;
     right: -4px;
@@ -697,6 +702,7 @@ header {
     cursor: pointer;
     z-index: 2;
 }
+
 #perforators-slide:checked ~ .slider > .perforators-slide,
 #drills-slide:checked ~ .slider > .drills-slide {
     opacity: 1;
@@ -716,10 +722,6 @@ header {
 }
 
 /*Товары*/
-
-.popular-products {
-	margin-bottom: 21px;
-}
 
 .top {
 	background: #f7f3ec;
@@ -760,6 +762,9 @@ header {
 	display: flex;
 	justify-content: space-between;
     align-items: flex-start;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .product-list li {
@@ -918,7 +923,11 @@ header {
     min-height: 40px;
     padding: 0 25px;
     margin-top: 10px;
-    margin-bottom: 15px;    
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: "PT Sans", "Arial", serif;
+    font-size: 18px;
+    line-height: 20px;   
 }
 
 .product .old-price,
@@ -928,7 +937,6 @@ header {
 
 .product .old-price {
     min-height: 20px;
-    margin-top: 5px;
     margin-bottom: 10px;
     color: #999;
     text-decoration: line-through;
@@ -937,13 +945,14 @@ header {
 .product .new-price {
     position: relative;
     width: 80px;
-    margin: 10px auto;
+    margin: 5px auto;
     margin-bottom: 20px;
     padding: 10px 30px;
     color: white;
     background: #ee3643;
     border-radius: 3px;
     font-size: 17px;
+    line-height: 18px;
     font-weight: 700; 
 }
 
@@ -958,15 +967,6 @@ header {
     border-left-color: #ee3643;
 }
 
-.triangle-right {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 19px 0 19px 32.9px;
-    border-color: transparent transparent transparent #ee3643;
-}
-
 .flag-new::after {
     position: absolute;
     content: "";
@@ -977,8 +977,6 @@ header {
     background: url("../img/new.png") no-repeat 0 0;
     z-index: 20;
 }
-
-
 
 /*Производители*/
 
@@ -999,6 +997,12 @@ header {
 	align-items: center;
 	margin: 0 16px 16px 0;
 	border: 1px solid #ccc;
+}
+
+.manufacturers-list {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .manufacturers-list li {
@@ -1027,7 +1031,6 @@ header {
 	align-items: center;
 }
 
-
 /*Сервис*/
 
 .service-info {
@@ -1035,7 +1038,7 @@ header {
     max-height: 525px;
     background-color: #f2f6f8; 
     margin-top: 70px;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
     padding-bottom: 25px
 }
 
@@ -1069,6 +1072,12 @@ header {
     width: 280px;
 }
 
+.tabs ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .tabs li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1095,7 +1104,7 @@ header {
 
 .service-title {
     margin-top:0;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-family: "Cuprum","Arial",sans-serif;
     font-weight: normal;
     font-size: 36px;
@@ -1156,7 +1165,7 @@ header {
     box-shadow:
     inset 0 1px 0 0 #405069,
           0 1px 0 0 #293449;
-    }
+}
 
 .service {
     display: none;
@@ -1213,14 +1222,13 @@ header {
     text-transform: uppercase;
 }
 
-
 /*О Компании*/
 
 .about-company {
 	font-family: "PT Sans", "Arial", serif;
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 110px;
+	padding-bottom: 85px;
 }
 
 .about-company h2 {
@@ -1228,14 +1236,16 @@ header {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     font-weight: 400;
-    line-height: 0.8;
+    line-height: 30px;
+    text-transform: uppercase;
 }
 
 .company-info p {
     margin: 15px 0;
     font-family: "Cuprum", "Arial", sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     width: 520px;
+    line-height: 25px;
 }
 
 .delivery-list {
@@ -1243,19 +1253,15 @@ header {
     position: relative;
     margin: 15px 0;
     font-family: "Cuprum", "Arial", sans-serif;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .delivery-list li {
 	padding-left: 35px;
     list-style: none;
-}
-
-.delivery-list li:nth-child(2) {
-	padding-top: 25px;
-}
-
-.delivery-list li:nth-child(3) {
-	padding-top: 20px;
+    margin-top: 23px;
 }
 
 .delivery-list li:before {
@@ -1276,34 +1282,25 @@ header {
     top: 90px;
 }
 
-.delivery-list ul {
-    padding-bottom: 30px;
-}
-
-.delivery-list a {
-    color: #000000;
-    font-size: 18px;
-    line-height: 2;
-    text-decoration: none;
-    font-family: "Cuprum", "Arial", sans-serif;
-}
-
-.company-info a {
+.company-info .btn {
     background: #ee3643;
     color: #ffffff;
     border-radius: 5px;
-    padding: 10px 40px;
+    padding: 10px 30px;
     font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 15px;
 }
-
 
 .about-company .about-company-btn {
     margin: 10px 0 0;
     background: #ee3643;
     color: #ffffff;
     font-size: 14px;
-    padding: 10px 50px;
+    padding: 10px 60px;
     text-decoration: none;
     border-radius: 5px;
     border: none;
@@ -1311,7 +1308,8 @@ header {
     font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 40px;
+    vertical-align: middle;
 } 
 
 .delivery-list {
@@ -1321,6 +1319,14 @@ header {
 .contacts {
     width: 300px;
     font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.contacts h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
 }
 
 .contacts p {
@@ -1338,6 +1344,9 @@ header {
     margin: 20px 20px 20px 30px;
     position: relative;
     display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .breadcrumbs li {
@@ -1362,7 +1371,6 @@ header {
     color: #000000;
     text-decoration: none;
 }
-
 
 .breadcrumbs li,
 .breadcrumbs a {
@@ -1524,6 +1532,13 @@ legend {
     margin-top: 60px;
 }
 
+.manufacturers-select ul,
+.type-of-energy ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .manufacturers-select li,
 .type-of-energy li {
     list-style: none;
@@ -1539,11 +1554,10 @@ input[type="checkbox"] + label {
     font-weight: normal;
     text-transform: uppercase;
     position: relative;
-    line-height: 22px;
-    font-size: 14px;
     padding-left: 40px;
     display: inline-block;
     padding-bottom: 15px;
+    vertical-align: middle;
 }
  
 input[type="checkbox"] + label:before {
@@ -1582,11 +1596,10 @@ input[type="radio"] + label {
     font-weight: normal;
     text-transform: uppercase;
     position: relative;
-    line-height: 22px;
-    font-size: 14px;
     padding-left: 40px;
     display: inline-block;
     padding-bottom: 15px;
+    vertical-align: middle;
 }
  
 input[type="radio"] + label:before {
@@ -1658,8 +1671,17 @@ input[type="radio"]:checked + label:before {
 	border-bottom: 1px solid #ee3643;
 }
 
+.sorting {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .sorting-nav {
   	display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .sorting li {
@@ -1710,7 +1732,6 @@ li .down {
     border-color: #c6c2bd transparent transparent transparent;
 }
 
-
 li .down:hover {
   	border-color: #000000 transparent transparent transparent;
 }
@@ -1733,6 +1754,9 @@ li .down:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .catalog-product-list li {
@@ -1741,6 +1765,9 @@ li .down:active {
 
 .btn-page {
 	display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .btn-page li {
@@ -1768,7 +1795,6 @@ li .down:active {
     text-transform: uppercase;
 }
 
-
 .catalog-nav a:hover {
 	border: 1px solid #bdc6ca;
 }
@@ -1784,14 +1810,12 @@ li .down:active {
 
 .product {
 	width: 220px;
-  	margin-bottom: 20px;
-    box-sizing: border-box;
+  	box-sizing: border-box;
 }
 
 .drills-info {
 	background: #f2f6f8;
     font-family: "Cuprum", "Arial", sans-serif;
-
 }
 
 .about-drills {
@@ -1809,8 +1833,6 @@ li .down:active {
     font-weight: 500;
 }
 
-
-
 /*Футер*/
 
 footer {
@@ -1825,7 +1847,7 @@ footer {
   	padding-bottom: 50px;
   	display: flex;
   	padding: 0;
-  	margin-bottom: 30px;
+  	margin-bottom: 10px;
 }
 
 .footer-contacts {
@@ -1873,7 +1895,9 @@ footer {
   	display: flex;
   	padding: 0;
   	text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .footer-top-menu li {
@@ -1904,8 +1928,8 @@ footer {
   	background: #32425C;
   	font-family: "Cuprum", "Arial", sans-serif;
   	font-size: 18px;
-  	line-height: 1.333;
-  	padding-bottom: 30px;
+  	line-height: 20px;
+  	padding-bottom: 40px;
 }
 
 .shop-info {	
@@ -1920,8 +1944,12 @@ footer {
 	padding-bottom: 0;
 	margin-bottom: 0;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 20px;
     font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.contact a {
+    text-decoration: none;
 }
 
 .shop-menu {
@@ -1929,6 +1957,7 @@ footer {
   	align-items: center;
   	position: relative;
   	margin: 0;
+    padding-left: 0;
 }
 
 .shop-menu li {
@@ -1936,7 +1965,6 @@ footer {
 	padding-left: 35px;
     list-style: none;
 }
-
 
 .shop-menu a {
   	color: #FFD180;
@@ -1973,14 +2001,17 @@ footer {
 
 .copyright {
 	width: 350px;
-	margin: 0 30px 0 0;
+	margin: 0 40px 0 0;
 	color: #ffffff;
 }
 
 .footer-social ul {
 	width: 200px;
-	margin-right: 60px;
+	margin-right: 40px;
 	display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .footer-social li {
@@ -2037,10 +2068,11 @@ footer {
 	background: #ee3643 url("../img/insta.svg") no-repeat 50% 50%;
 }
 
-
 .feedback {
 	width: 140px;
 	margin: 0;
+    padding-top: 5px;
+    padding-left: 30px;
 }
 
 .feedback a {
@@ -2060,7 +2092,8 @@ footer {
 .developed {
 	width: 140px;
 	margin: 0;
-	padding-left: 50px;
+    padding-top: 5px;
+	padding-left: 60px;
 }
 
 .developed a {

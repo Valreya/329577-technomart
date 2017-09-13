@@ -1560,7 +1560,7 @@ legend {
 .price-controls span{
     display: inline-block;
     vertical-align: middle;
-    margin: 3px 2px 0px 2px;
+    margin: 15px 2px 0px 2px;
 }
 
 .price-controls {

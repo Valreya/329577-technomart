@@ -222,13 +222,13 @@ header {
 .header-middle {
 	position: relative;
     padding-top: 40px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 
 .intro {
-	width: 210px;
+	width: 215px;
 	color: #EE4F5B;
-	margin: 6px 10px 0 50px;
+	margin: 10px 10px 0 50px;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 1.438;
@@ -298,9 +298,6 @@ header {
     font-size: 21px;
     font-weight: 400;
     line-height: 21px;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
     padding-left: 50px;
     margin-top: 5px;
     position: relative;
@@ -324,7 +321,7 @@ header {
 .log-in {
     font-family: "Cuprum", "Arial", sans-serif;
     background: #ffffff;
-    padding: 11px 25px 11px 50px;
+    padding: 12px 25px 11px 50px;
     position: relative;
     text-decoration: none;
     font-size: 21px;
@@ -337,14 +334,21 @@ header {
     display: inline-block;
     margin: 0;
     background: #ffffff;
-    position: absolute;
-    right: 10px;
-    top: 11px;
     width: 20px;
     height: 18px;
-    padding: 12px 9px 12px 9px;
+    padding: 12px 9px 13px 9px;
     vertical-align: top;
-    background: #ffffff url("../img/logout.svg") no-repeat;
+}
+
+.log-out:before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 20px;
+    height: 18px;
+    background: url("../img/logout.svg") no-repeat;
+    opacity: 0.5;
 }
 
 .log-out:hover {
@@ -356,11 +360,15 @@ header {
     content: "";
     position: absolute;
     left: 20px;
-    top: 11px;
+    top: 12px;
     width: 20px;
     height: 18px;
     background: url("../img/icon-user.svg") no-repeat;
     opacity: 0.5;
+}
+
+.user-menu {
+    margin-top: 6px;
 }
 
 .user-menu a {
@@ -372,7 +380,6 @@ header {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 16px;
     line-height: 16px;
-    text-decoration: underline;
 }
 
 .user-menu a:hover {
@@ -439,11 +446,16 @@ header {
 	padding: 13px 25px;
 }
 
+.my-orders {
+    position: relative;
+    padding-right: 10px;
+}
+
 .my-orders::after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 100px;
+    top: 8px;
+    left: 105px;
     width: 4px;
     height: 4px;
     background: #32425c;
@@ -463,6 +475,7 @@ header {
   	text-align: center;
     font-family: "Cuprum", "Arial", sans-serif;
     justify-content: center;
+    margin-top: 6px; 
 }
 
 .menu li:first-child a {
@@ -1261,7 +1274,7 @@ header {
 }
 
 .about-company h2 {
-    margin: 0 0 30px 0;
+    margin: 2px 0 27px 0;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     font-weight: 400;
@@ -1270,27 +1283,26 @@ header {
 }
 
 .company-info p {
-    margin: 15px 0;
+    margin-top: 14px;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     width: 520px;
-    line-height: 25px;
+    line-height: 27px;
 }
 
 .delivery-list {
     list-style: none;
     position: relative;
-    margin: 15px 0;
     font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 17px;
     padding-left: 0;
-    margin-top: 0;
     margin-bottom: 30px;
 }
 
 .delivery-list li {
 	padding-left: 35px;
     list-style: none;
-    margin-top: 23px;
+    margin-top: 20px;
 }
 
 .delivery-list li:before {
@@ -1300,15 +1312,15 @@ header {
     background: #FB565A;
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 8px;
 }
 
 .delivery-list li:nth-child(2):before {
-  	top: 50px;
+  	top: 48px;
 }
 
 .delivery-list li:nth-child(3):before {
-    top: 90px;
+    top: 86px;
 }
 
 .company-info .btn {
@@ -1317,11 +1329,12 @@ header {
     border-radius: 5px;
     padding: 10px 30px;
     font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14ps;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
     vertical-align: middle;
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 .about-company .about-company-btn {
@@ -1331,13 +1344,13 @@ header {
     font-size: 14px;
     padding: 10px 60px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 3px;
     border: none;
     border-radius: 5px;
     font-family: "Cuprum", "Arial", sans-serif;
     text-transform: uppercase;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 42px;
     vertical-align: middle;
 } 
 
@@ -2010,7 +2023,7 @@ footer {
   	display: flex;
   	align-items: right;
   	position: relative;
-  	margin: 0;
+  	margin-top: 5px;
     padding-left: 0;
 }
 
@@ -2048,7 +2061,7 @@ footer {
 
 .footer-bottom .container {
 	display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 	padding-top: 35px;
 	padding-bottom: 31px;
 }
@@ -2061,7 +2074,8 @@ footer {
 
 .footer-social ul {
 	width: 200px;
-	margin-right: 40px;
+	margin-left: 40px;
+    margin-right: 20px;
 	display: flex;
     padding-left: 0;
     margin-top: 0;
@@ -2146,7 +2160,7 @@ footer {
 	width: 140px;
 	margin: 0;
     padding-top: 5px;
-	padding-left: 60px;
+	padding-left: 50px;
 }
 
 .developed a {
@@ -2231,6 +2245,13 @@ footer {
 
 .write-us {
     font-family: "Cuprum", "Arial", sans-serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    background: #ffffff;
+    display: none;
 }
 
 .write-us .close {
@@ -2255,7 +2276,6 @@ footer {
     margin: 0 auto;
     box-shadow: 0 0 10px #cccccc;
     position: relative;
-    display: none;
 }
 
 .write-us-form input {
@@ -2263,8 +2283,11 @@ footer {
     border-radius: 5px;
     font-size: 13px;
     line-height: 18px;
-    width: 250px; 
+    width: 220px; 
     margin-top: 13px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
 }
 
 .form-answer {
@@ -2278,15 +2301,19 @@ footer {
 }
 
 .form-answer-text label {
-    margin-left: 60px;
+    margin-left: 65px;
 }
 
 .form-answer-text textarea {
-    margin-left: 60px;
+    margin-left: 65px;
     border-radius: 5px;
     font-size: 13px;
     line-height: 18px;
-    width: 80%;
+    width: 470px;
+    min-height: 110px;
+    padding-top: 7px;
+    padding-left: 10px;
+    margin-top: 13px;
 }
 
 .write-us-btn {

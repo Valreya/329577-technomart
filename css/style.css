@@ -24,8 +24,12 @@ header {
 }
 
 .header-top-wrapper {
-	display: flex;
-	justify-content: space-between;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .logo {
@@ -106,11 +110,17 @@ header {
 }
 
 .personal-block {
-	display: flex;
-	justify-content: space-between;
-	margin: 0;
-	padding: 0;
-    align-items: flex-start;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     font-family: "Cuprum", "Arial", sans-serif;
 }
 
@@ -269,6 +279,7 @@ header {
 	position: relative;
 	display: flex;
     justify-content: flex-start;
+    margin-top: 5px;
 }
 
 .user-block li {
@@ -279,11 +290,12 @@ header {
     width: 300px;
     font-size: 21px;
     font-weight: 400;
-    line-height: 0.857;
+    line-height: 21px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     padding-left: 50px;
+    margin-top: 5px;
 }
 
 .personal-data {
@@ -304,7 +316,7 @@ header {
 .log-in {
     font-family: "Cuprum", "Arial", sans-serif;
     background: #ffffff;
-    padding: 14px 14px 14px 50px;
+    padding: 11px 25px 11px 50px;
     position: relative;
     text-decoration: none;
     font-size: 21px;
@@ -315,7 +327,7 @@ header {
     display: inline-block;
     margin: 0;
     background: #ffffff;
-    padding: 14px 14px 14px 0px;
+    padding: 12px 9px 12px 9px;
     vertical-align: baseline;
     line-height: 15px;
 }
@@ -344,8 +356,8 @@ header {
     position: relative;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 16px;
-    line-height: 18px;
-    text-decoration: none;
+    line-height: 16px;
+    text-decoration: underline;
 }
 
 .user-menu a:hover {
@@ -358,8 +370,7 @@ header {
 
 .user-block .login,
 .user-block .registration {
-	margin-top: 5px;
-    color: #000000;
+	color: #000000;
 	text-decoration: none;
 	background: #ffffff;
     font-family: "Cuprum", "Arial", sans-serif;
@@ -447,7 +458,7 @@ header {
 
 .menu li {
 	flex-grow: 1;
-	padding: 17px 0px;
+	padding: 18px 0px;
     list-style: none;
 }
 
@@ -474,7 +485,7 @@ header {
   	text-decoration: none;
   	color: #FFFFFF;
   	font-size: 17px;
-  	padding: 19px 0px;
+  	padding: 18px 0px;
 }
 
 /*Услуги*/
@@ -483,7 +494,7 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 60px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
     align-items: flex-start;
     font-family: "Cuprum", "Arial", sans-serif;
 }
@@ -525,7 +536,7 @@ header {
 
 .item a {
     display: inline-block;
-    padding: 10px 0px;
+    padding: 11px 0px;
     margin: 0;
     vertical-align: text-top;
 }
@@ -667,8 +678,9 @@ header {
 
 .slide-text .btn-catalogue {
     display: block;
+    width: 195px;
     margin: 119px 1px 1px 0px;
-    padding: 12px 0px;
+    padding: 11px 0px;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -1039,7 +1051,7 @@ header {
     background-color: #f2f6f8; 
     margin-top: 70px;
     margin-bottom: 75px;
-    padding-bottom: 25px
+    padding-bottom: 26px
 }
 
 .service-info h2 {
@@ -1341,12 +1353,9 @@ header {
 
 .breadcrumbs {
     padding: 0;
-    margin: 20px 20px 20px 30px;
+    margin: 20px 20px 20px 0px;
     position: relative;
     display: flex;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .breadcrumbs li {
@@ -1403,15 +1412,15 @@ header {
 .list-title {
 	width: 940px;
 	background: #f2f6f8;
-    padding-top: 32px;
-    padding-bottom: 34px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 30px;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
     font-weight: 500;
-    margin-top: 33px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #32425c;
     box-sizing: border-box;
     font-family: "Cuprum", "Arial", sans-serif;
@@ -1423,7 +1432,7 @@ header {
 }
 
 .filters-title {
-    padding: 10px 150px 15px 19px;
+    padding: 10px 150px 10px 19px;
     margin: 0;
     font-weight: 500;
 }
@@ -1444,11 +1453,11 @@ header {
 
 legend {
 	font-size: 17px;
-	line-height: 30px;
+	line-height: 17px;
 	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 20px
 }
 
@@ -1460,8 +1469,8 @@ legend {
     width: 220px;
     position: relative;
     background: #f7f3ec;
-    padding-bottom: 35px;
-    padding-top: 35px;
+    padding-bottom: 40px;
+    padding-top: 40px;
     border-radius: 5px;
 }
 
@@ -1478,7 +1487,7 @@ legend {
 
 .range-toggle {
     position: absolute;
-    top: 25px;
+    top: 30px;
     width: 4px;
     height: 4px;
     background: #ababab;
@@ -1493,11 +1502,11 @@ legend {
 }
 
 .range-toggle-min {
-    left: 10px;
+    left: 20px;
 }
 
 .range-toggle-max {
-    left: 75%;
+    left: 160px;
 }
 
 .price-controls label {
@@ -1512,24 +1521,36 @@ legend {
     background: #f7f3ec;
     border: none;
     border-radius: 5px;
-    width: 101px;
+    width: 95px;
     text-align: center;
     padding: 12px 0px;
-    margin-top: 9px;
+    margin-top: 8px;
+}
+
+.price-controls span{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 4px;
+    margin-top: 17px;
 }
 
 .price-controls {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 .form-btn {
 	background: #ffffff;
 	border: 1px solid #e5e5e5;
-    padding: 10px 35px;
+    padding: 10px 38px;
     font-size: 13px;
     text-transform: uppercase;
     font-family: "PT Sans", "Arial", serif;
     margin-top: 60px;
+}
+
+.manufacturers-select legend,
+.type-of-energy legend {
+    padding-top: 23px;
 }
 
 .manufacturers-select ul,
@@ -1542,6 +1563,7 @@ legend {
 .manufacturers-select li,
 .type-of-energy li {
     list-style: none;
+    margin-bottom: 5px;
 }
 
 input[type="checkbox"] {
@@ -1645,7 +1667,7 @@ input[type="radio"]:checked + label:before {
 
 .assortment-nav h4 {
 	font-size: 13px;
-	line-height: 18px;
+	line-height: 13px;
 	margin-left: 20px;
     font-family: "PT Sans", "Arial", serif;
     text-transform: uppercase;
@@ -1694,6 +1716,7 @@ input[type="radio"]:checked + label:before {
     text-transform: uppercase;
     font-family: "PT Sans", "Arial", serif;
     font-size: 13px;
+    text-decoration: none;
 }
 
 .sorting-nav {
@@ -1747,7 +1770,7 @@ li .down:active {
 
 .catalog {
   	padding: 0;
-  	margin-bottom: 20px;
+  	margin-bottom: 31px;
 }
 
 .catalog-product-list {
@@ -1795,6 +1818,10 @@ li .down:active {
     text-transform: uppercase;
 }
 
+.last-btn a {
+    padding: 10px 30px;
+}
+
 .catalog-nav a:hover {
 	border: 1px solid #bdc6ca;
 }
@@ -1821,7 +1848,7 @@ li .down:active {
 .about-drills {
 	width: 940px;
 	padding-top: 40px;
-	padding-bottom: 50px;
+	padding-bottom: 55px;
 	margin: 0 auto;
 }
 
@@ -1831,6 +1858,12 @@ li .down:active {
     font-size: 30px;
     line-height: 30px;
     font-weight: 500;
+}
+
+.about-drills p {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 25px;
 }
 
 /*Футер*/
